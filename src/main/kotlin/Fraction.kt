@@ -1,14 +1,13 @@
 //წილადის კლასი
-class Fraction {
-    //default მნიშვნელობები
-    var numerator:Int = 0
-    var denominator:Int = 1
-
+class Fraction(var numerator:Int = 0,var denominator:Int = 1) {
     //შეკვეცა
     fun simplify():String{
         if(denominator < 0){
             numerator *= -1
             denominator *= -1
+        }
+        else if(denominator==0){
+            throw
         }
 
         for (i in 2..denominator){

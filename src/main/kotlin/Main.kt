@@ -1,6 +1,6 @@
 fun main(){
-    val f1 = Fraction(-4,3)
-    val f2 = Fraction()
+    val f1 = Fraction(-3,3)
+    val f2 = Fraction(3,3)
 
     //println(f1.simplify())    // შეკვეცა
     println("$f1+$f2=${add(f1,f2)}")    // გამოკლება

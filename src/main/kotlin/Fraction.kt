@@ -7,8 +7,11 @@ class Fraction(var numerator:Int = 0,var denominator:Int = 1) {
             denominator *= -1
         }
         else if(denominator==0){
-            throw
+            throw java.lang.NumberFormatException("Denominator can't be zero!")
         }
+
+        //if(numerator==0) return "0"
+        if(numerator%denominator == 0) return (numerator/denominator).toString()
 
         for (i in 2..denominator){
             while(denominator%i == 0 && numerator%i == 0){

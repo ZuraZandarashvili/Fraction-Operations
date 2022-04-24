@@ -10,7 +10,6 @@ class Fraction(var numerator:Int = 0,var denominator:Int = 1) {
             throw java.lang.NumberFormatException("Denominator can't be zero!")
         }
 
-        //if(numerator==0) return "0"
         if(numerator%denominator == 0) return (numerator/denominator).toString()
 
         for (i in 2..denominator){
